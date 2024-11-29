@@ -1,0 +1,116 @@
+.cadastro {
+  display: flex; /* Enables flex context */
+  flex-direction: column; /* Stacks items vertically */
+  justify-content: center;
+}
+.formulario{
+  display: flex;
+  justify-content: center;
+}
+
+.titulo{
+  font-size: 2.3rem;
+  color: #f35c89; 
+  margin-bottom: 30px;
+  margin-top: 80px;
+  text-align: center;
+  font-weight: bold;
+
+}
+
+
+
+/* Caixa do formulário */
+form {
+  background: linear-gradient(135deg, #ffffff, #f8f9fd); /* Fundo degradê leve */
+  padding: 40px;
+  border-radius: 15px; /* Bordas arredondadas */
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1); /* Sombra elegante */
+  max-width: 400px; /* Limita a largura */
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px; /* Espaço entre os elementos */
+  align-items: center; /* Centraliza os itens */
+}
+
+/* Campos de entrada */
+form div {
+  width: 100%;
+}
+
+form input{
+  box-sizing: border-box;
+}
+
+form input[type="text"], 
+form input[type="number"] {
+  width: 100%; /* Preenche a largura disponível */
+  padding: 12px;
+  border: 1px solid #d9d9d9; /* Borda cinza clara */
+  border-radius: 8px;
+  font-size: 1rem;
+  background-color: #f9f9f9; /* Fundo claro */
+  color: #333;
+  box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.05);
+  transition: all 0.3s ease;
+}
+
+form input[type="text"]:focus, 
+form input[type="number"]:focus {
+  border-color: #5c5f97; /* Borda azul arroxeada ao focar */
+  box-shadow: 0 0 5px rgba(92, 95, 151, 0.3);
+  outline: none;
+}
+
+/* Botão */
+form input[type="submit"] {
+  width: 100%;
+  padding: 12px;
+  border: none;
+  border-radius: 8px;
+  font-size: 1.1rem;
+  font-weight: bold;
+  background-color: #f35c89; /* Cor azul arroxeada */
+  color: #fff;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+form input[type="submit"]:hover {
+  background-color: #e40687; /* Azul mais escuro ao passar o mouse */
+}
+
+/* Ajuste de espaçamento entre itens */
+form div:last-child {
+  margin-bottom: 0;
+}
+
+
+
+.cabecalho {
+  background-color: #f35c89; /* Cor de fundo */
+  color: white; /* Cor do texto */
+  padding: 20px 0; /* Espaçamento interno */
+  text-align: center; /* Alinhar texto ao centro */
+}
+
+.cabecalho h1 {
+  font-size: 40px; /* Tamanho da fonte do título */
+  margin: 0; /* Remove margens automáticas */
+}
+
+.cabecalho p {
+  font-size: 18px; /* Tamanho da fonte para a descrição */
+  margin-top: 5px; /* Espaço entre o título e a descrição */
+}
+
+/* Título */
+h1 {
+  font-size: 2.3rem;
+  color: #5fc0ec; 
+  margin-bottom: 30px;
+  text-align: center;
+  font-weight: bold;
+}
+
