@@ -26,8 +26,9 @@ A funcionalidade de Listagem de Produtos é fundamental para a exibição organi
 
 Diagrama básico mostrando o fluxo de dados entre front-end e back-end:
 
-![Diagrama Mundo Encantado - Diagrama de caso de uso](https://github.com/user-attachments/assets/b8ac0c03-f0da-41c8-acf1-017622c073fc)
 
+
+[Diagrama Mundo Encantado.pdf](https://github.com/user-attachments/files/17965913/Diagrama.Mundo.Encantado.pdf)
 
 
 
