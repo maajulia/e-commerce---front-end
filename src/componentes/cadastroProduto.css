@@ -11,8 +11,8 @@
 .titulo{
   font-size: 2.3rem;
   color: #f35c89; 
-  margin-bottom: 30px;
-  margin-top: 80px;
+  margin-bottom: 20px;
+  margin-top: 20px;
   text-align: center;
   font-weight: bold;
 
@@ -87,30 +87,28 @@ form div:last-child {
 }
 
 
-
 .cabecalho {
   background-color: #f35c89; /* Cor de fundo */
   color: white; /* Cor do texto */
-  padding: 20px 0; /* Espaçamento interno */
+  padding: 10px 0; /* Reduzido o espaçamento interno */
   text-align: center; /* Alinhar texto ao centro */
 }
 
 .cabecalho h1 {
-  font-size: 40px; /* Tamanho da fonte do título */
-  margin: 0; /* Remove margens automáticas */
+  font-size: 30px; /* Reduzido o tamanho da fonte do título */
+  margin: 5px 0; /* Ajustado para margens menores */
 }
 
 .cabecalho p {
-  font-size: 18px; /* Tamanho da fonte para a descrição */
-  margin-top: 5px; /* Espaço entre o título e a descrição */
+  font-size: 14px; /* Reduzido o tamanho da fonte para a descrição */
+  margin-top: 2px; /* Espaço menor entre o título e a descrição */
 }
 
 /* Título */
 h1 {
-  font-size: 2.3rem;
-  color: #5fc0ec; 
-  margin-bottom: 30px;
+  font-size: 2rem; /* Ajustado o tamanho da fonte */
+  color: #5fc0ec;
+  margin-bottom: 20px; /* Reduzida a margem inferior */
   text-align: center;
   font-weight: bold;
 }
-

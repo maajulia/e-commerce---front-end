@@ -7,11 +7,17 @@ type ProdutoType = {
   nome: string,
   preco: string,
   descricao: string,
+  cor: string,
+  composicao: string,
+  tamanhos: string,
+  estoque: string,
   imagem: string
 }
 
+
 function App() {
   const [produtos, setProdutos] = useState<ProdutoType[]>([])
+
 
   // useEffect para carregar produtos e usuários
   useEffect(() => {
@@ -20,6 +26,7 @@ function App() {
       .then(resposta => resposta.json())
       .then(dados => setProdutos(dados))
   }, [])
+
 
   return (
     <>
@@ -33,9 +40,12 @@ function App() {
                     </ul>
                 </nav>
 
+
                 <button className='buttonCAD'><Link to={"/cadastro-produtos"}>Cadastrar Produtos</Link></button>
 
+
             </header>
+
 
       {/* Listagem de Produtos */}
       <div className="produtos-container">
@@ -50,6 +60,10 @@ function App() {
                 </div>
                 <p className="produto-preco">{produto.preco}</p>
                 <p className="produto-descricao">{produto.descricao}</p>
+                <p className="produto-cor">{produto.cor}</p>
+                <p className="produto-composicao">{produto.composicao}</p>
+                <p className="produto-tamanhos">{produto.tamanhos}</p>
+                <p className="produto-estoque">{produto.estoque}</p>
                 <button className="botao-comprar">Comprar</button>
               </div>
             ))
@@ -59,5 +73,6 @@ function App() {
     </>
   )
 }
+
 
 export default App
