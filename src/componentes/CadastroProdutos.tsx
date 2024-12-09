@@ -20,7 +20,7 @@ function CadastroProduto(){
             preco: preco,
             imagem: imagem
         }
-        fetch("http://localhost:8000/produtos",{
+        fetch("https://e-commerce-back-end-2.onrender.com/roupas",{
             method: "POST",
             headers: {
                 "Content-Type": "application/json"
