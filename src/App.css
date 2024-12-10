@@ -233,13 +233,19 @@
   .produto-item>.container-imagem>img {
     width: 100%;
   }
+
 }
 
 .buttonCAD{
-  
   background-color: #6dc2e9; /* Cor de fundo */
-    
-        
- 
 }
  
+.produto-descricao,
+.produto-cor,
+.produto-composicao,
+.produto-tamanhos,
+.produto-estoque {
+  font-size: 0.9rem;
+  color: #000000;
+  margin: 5px 0;
+}
