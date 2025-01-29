@@ -28,18 +28,16 @@ function App() {
   }, [])
 
     
-  function handleExcluir(id: number) {
-    alert(`Excluir o produto com id ${id}`);
-    fetch(`https://one022a-marketplace-e90o.onrender.com/produtos/${id}`, {
-      method: 'DELETE',
+  function handleExcluir(id:number){
+    alert(`Excluir o produto com id ${id}`)
+    fetch(`https://e-commerce-back-end-2.onrender.com/roupas/${id}`, {
+      method: 'DELETE'
     })
-      .then((resposta) => {
-        if (resposta.status === 200) {
+       .then(resposta=>{
+      if(resposta.status ===200) {
           alert("Produto excluído com sucesso");
           // Remover o produto excluído da lista de produtos
-          setProdutos((prevProdutos) =>
-            prevProdutos.filter((produto) => produto.id !== id)
-          );
+          window.location.reload()
         } else {
           alert("Erro ao excluir o produto: Confira o terminal do backend");
         }
@@ -48,19 +46,7 @@ function App() {
         alert(`Erro ao tentar excluir o produto: ${erro}`);
       });
   }
-<div className="produtos-list">
-  {produtos.map((produto) => (
-    <div key={produto.id} className="produto-item">
-      <h3 className="produto-nome">{produto.nome}</h3>
-      {/* Adicionando o botão "Excluir" */}
-      <button className='buttonExcluir' onClick={() => handleExcluir(produto.id)}>
-        Excluir
-      </button>
-      {/* Outras informações do produto */}
-    </div>
-  ))}
-</div>
-  
+
 
   return (
     <>
